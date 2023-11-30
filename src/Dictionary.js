@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data.meanings[0].definition);
+    setResults(response.data);
   }
-
   function search(event) {
     event.preventDefault();
     let apiKey = "1386aafaa966aa68e4520o87btc31531";
@@ -19,12 +20,14 @@ export default function Dictionary() {
   function getQuery(event) {
     setQuery(event.target.value);
   }
+
   return (
     <div className="Dictionary">
       <form onSubmit={search}>
         <input type="search" onChange={getQuery} />
         <input type="submit" />
       </form>
+      <Results results={results} />
     </div>
   );
 }
