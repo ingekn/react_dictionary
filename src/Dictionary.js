@@ -23,10 +23,14 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" onChange={getQuery} />
-        <input type="submit" />
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input type="search" onChange={getQuery} />
+          <button type="submit">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
       <Results results={results} />
     </div>
   );
