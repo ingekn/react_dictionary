@@ -2,3 +2,32 @@
   font-size: 26px;
   color: rgb(11, 105, 74);
 }
+/* .Dictionary button {
+  background-color: #ffffff;
+  padding: 5px 10px;
+} */
+.Dictionary section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+.Dictionary input {
+  height: 64px;
+  width: 100%;
+  padding: 22px;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  line-height: 21px;
+}
+.Dictionary .hint {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.Dictionary .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+}
