@@ -9,10 +9,10 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <h2>{props.results.word}</h2>
+          <h3>{props.results.word}</h3>
           <Phonetic phonetic={props.results.phonetic} />
         </section>
-        {props.results.meanings.slice(0, 5).map(function (meaning, index) {
+        {props.results.meanings.slice(0, 7).map(function (meaning, index) {
           return (
             <section key={index}>
               <Meaning meaning={meaning} />

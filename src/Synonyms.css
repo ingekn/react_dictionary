@@ -1,0 +1,13 @@
+.Synonyms {
+  margin: 20px 0 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+  color: rgb(200 131 217);
+}
+.Synonyms span {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 15px;
+}

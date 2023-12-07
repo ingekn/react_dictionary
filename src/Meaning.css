@@ -1,0 +1,13 @@
+.Meaning h4 {
+  line-height: 1.5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.Meaning .definition {
+  font-size: 19px;
+}
+
+.Meaning .group {
+  margin-left: 70px;
+}
