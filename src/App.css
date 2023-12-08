@@ -1,7 +1,10 @@
 body {
   background-color: rgb(226 250 255);
 }
-h1 {
+.App .container {
+  max-width: 1000px;
+}
+.App h1 {
   text-align: center;
   margin: 40px;
   color: rgb(200 131 217);
