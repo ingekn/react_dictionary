@@ -9,7 +9,7 @@ export default function Dictionary(props) {
   const [query, setQuery] = useState(props.defaultQuery);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
-  const [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState(null);
 
   function handleImages(response) {
     setPhotos(response.data.photos);
@@ -20,7 +20,7 @@ export default function Dictionary(props) {
 
     ///image  APi ->
     let apiKey = "1386aafaa966aa68e4520o87btc31531";
-    let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${query}&key=${apiKey}`;
+    let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${response.data.word}&key=${apiKey}`;
     axios
       .get(imageApiUrl, { headers: { Authorization: `Bearer ${apiKey}` } })
       .then(handleImages);
@@ -46,7 +46,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h2>What word do you want to look up? </h2>
+          <h2>Which word do you want to look up? </h2>
           <form onSubmit={handleSubmit}>
             <input
               type="search"

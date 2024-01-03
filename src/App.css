@@ -4,9 +4,8 @@ body {
 .App .container {
   max-width: 1000px;
 }
-.App h1 {
-  text-align: center;
-  margin: 40px;
-  color: rgb(200 131 217);
-  font-size: 50px;
+.App img {
+  width: 250px;
+  display: block;
+  margin: 25px auto;
 }
