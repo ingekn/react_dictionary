@@ -1,5 +1,8 @@
 body {
   background-color: rgb(226 250 255);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/245/original/jonas-jacobsson-0FRJ2SCuY4k-unsplash.jpg?1704394899);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App .container {
   max-width: 1000px;
