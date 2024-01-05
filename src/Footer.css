@@ -7,3 +7,8 @@
   color: #b9f5ff;
   margin: 5px;
 }
+@media (max-width: 540px) {
+  .Footer {
+    font-size: 11px;
+  }
+}

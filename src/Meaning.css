@@ -11,3 +11,12 @@
 .Meaning .group {
   margin-left: 70px;
 }
+
+@media (max-width: 540px) {
+  .Meaning .definition {
+    font-size: 15px;
+  }
+  .Meaning .group {
+    margin-left: 48px;
+  }
+}

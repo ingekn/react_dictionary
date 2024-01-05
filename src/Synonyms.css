@@ -11,3 +11,13 @@
   display: inline-block;
   margin-left: 15px;
 }
+
+@media (max-width: 540px) {
+  .Synonyms {
+    font-size: 13px;
+  }
+  .Synonyms span {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}

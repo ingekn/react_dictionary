@@ -1,5 +1,4 @@
 .Dictionary {
-  font-size: 26px;
   color: #a5780b;
   color: #496165;
 }
@@ -8,10 +7,6 @@
   margin-bottom: 15px;
   font-weight: bold;
 }
-/* .Dictionary button {
-  background-color: #ffffff;
-  padding: 5px 10px;
-} */
 .Dictionary section {
   background-color: white;
   padding: 30px;
@@ -36,4 +31,27 @@
 .Dictionary .hint {
   font-size: 11px;
   margin-top: 5px;
+}
+
+@media (max-width: 540px) {
+  .Dictionary h2 {
+    font-size: 24px;
+  }
+  .Dictionary h3 {
+    font-size: 21px;
+  }
+  .Dictionary h4 {
+    font-size: 18px;
+  }
+  .Dictionary section {
+    padding: 16px;
+  }
+  .Dictionary input {
+    height: 54px;
+    padding: 18px;
+    font-size: 15px;
+  }
+  .Dictionary .hint {
+    font-size: 10px;
+  }
 }

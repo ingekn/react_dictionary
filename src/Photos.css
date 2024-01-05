@@ -2,3 +2,8 @@
   border-radius: 6px;
   margin: 10px 0;
 }
+@media (max-width: 540px) {
+  .Photos img {
+    margin: 8px 0;
+  }
+}
